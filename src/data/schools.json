@@ -1,0 +1,39 @@
+[
+ {
+  "id": "networking",
+  "name": "Networking & Infrastructure",
+  "short": "Networks",
+  "description": "Build the infrastructure that keeps people and businesses connected.",
+  "image": {
+   "photo": "networking1"
+  }
+ },
+ {
+  "id": "cybersecurity",
+  "name": "Cybersecurity",
+  "short": "Security",
+  "description": "Learn to think defensively, investigate signals, and protect systems.",
+  "image": {
+   "photo": "cybersecurity1"
+  }
+ },
+ {
+  "id": "software",
+  "name": "Software & Web Development",
+  "short": "Software",
+  "description": "Turn ideas into useful digital products through code and craft.",
+  "image": {
+   "photo": "coding1"
+  }
+ },
+ {
+  "id": "data",
+  "name": "Data, Cloud & AI",
+  "short": "Future school",
+  "description": "A future-facing pathway for data literacy, cloud, and AI foundations.",
+  "image": {
+   "photo": "online_class1"
+  },
+  "future": true
+ }
+]

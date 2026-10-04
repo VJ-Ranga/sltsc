@@ -1,0 +1,63 @@
+{
+ "pillars": [
+  {
+   "title": "Find your people",
+   "text": "A welcoming place to ask, share, and keep learning between classes.",
+   "image": {
+    "photo": "students3"
+   }
+  },
+  {
+   "title": "Practise in public",
+   "text": "Bring a small build, a lab question, or a new idea to the conversation.",
+   "image": {
+    "photo": "online_class3"
+   }
+  },
+  {
+   "title": "Make the next move",
+   "text": "Events and peer moments designed to turn momentum into a clear next step.",
+   "image": {
+    "photo": "events1"
+   }
+  }
+ ],
+ "stories": [
+  {
+   "name": "Demo learner story",
+   "role": "Career switcher · Demo info",
+   "quote": "A place to learn alongside other people, not just watch from the sidelines.",
+   "image": {
+    "photo": "graduation1"
+   }
+  },
+  {
+   "name": "Demo learner story",
+   "role": "Foundation learner · Demo info",
+   "quote": "The community layer makes every question feel like part of the process.",
+   "image": {
+    "photo": "students4"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "photo": "students5"
+  },
+  {
+   "photo": "online_class4"
+  },
+  {
+   "photo": "events2"
+  },
+  {
+   "photo": "coding5"
+  },
+  {
+   "photo": "instructor2"
+  },
+  {
+   "photo": "graduation2"
+  }
+ ]
+}

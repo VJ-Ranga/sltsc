@@ -9,7 +9,7 @@ updated: 2026-10-03
 > See [[Client Facts (Confirmed)]] and [[Demo v2 Build]] for the client-approved founder, Cisco NetAcad, and CCNA content update.
 
 **Project:** New website for SLTSC Academy, an online-first Sri Lankan IT academy beginning with networking and cybersecurity and designed to expand into software, data, cloud, AI, and future university pathways.
-**Scope of this vault:** planning docs only. No HTML/CSS/code build yet.
+**Scope of this vault:** planning docs, plus the static demo site generated from `src/` into `demo/` (see `README.md`).
 
 > [!info] Current state
 > sltsc.lk and ynh.lk are both static "Under Construction / Coming Soon" pages. No courses, fees, contact channels or logo exist online. See [[Current Sites Audit]].
@@ -54,7 +54,7 @@ updated: 2026-10-03
 | Strategy | v2 drafted, needs client sign-off |
 | Site plan | v2 demo scope defined |
 | Design system | v2 editorial IT direction drafted |
-| Build | Not started; blocked on client content |
+| Build | v3 demo built (32 pages, generated from `src/`); real content still blocked on client |
 
 ## Next steps
 1. Client reviews [[Strategy v2 - IT Academy]], [[Sitemap v2]], and [[Design System v2]].
