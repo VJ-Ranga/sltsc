@@ -85,7 +85,7 @@ function banner({ eyebrow: e, title, intro, crumbs = [], image, cls = '' }) {
 function programCard(p, { compact = false } = {}) {
   const s = schoolOf(p.school);
   return `<article class="card pcard" data-school="${p.school}" data-level="${esc(p.level)}" data-weeks="${weeksOf(p.duration)}" data-title="${esc(p.title.toLowerCase())}">
-  <a class="card__media" href="program-${p.id}.html" tabindex="-1" aria-hidden="true">${img(p.image, { w: 720, h: 460, alt: '' })}<span class="chip chip--float">${esc(s.short)}</span></a>
+  <a class="card__media" href="program-${p.id}.html" tabindex="-1" aria-hidden="true">${img(p.image, { w: 720, h: 460, alt: '' })}<span class="chip chip--float chip--${s.id}">${esc(s.short)}</span></a>
   <div class="card__body">
     ${p.badge ? `<span class="tag tag--gold">${esc(p.badge)}</span>` : `<span class="card__kicker">${esc(p.level)}</span>`}
     <h3><a href="program-${p.id}.html">${esc(p.title)}</a></h3>
@@ -110,16 +110,17 @@ const NAV = [['about.html', 'About'], ['schools.html', 'Schools', true], ['progr
 function header(file) {
   const cur = file;
   const isCur = h => (h === cur || (h === 'schools.html' && /^school/.test(cur)) || (h === 'programs.html' && /^program/.test(cur)) || (h === 'news.html' && /^article/.test(cur)) || (h === 'about.html' && /^(founder|faculty)/.test(cur))) ? ' aria-current="page"' : '';
-  const mega = `<div class="mega"><div class="wrap mega__in">
-    <div class="mega__intro">${eyebrow('Four schools')}<p>Start with a school, then choose a practical next step.</p><a class="arrow-link" href="schools.html">All schools ${icon('arrow')}</a></div>
-    ${data.schools.map(s => `<a class="mega__item" href="school-${s.id}.html"><strong>${esc(s.name)}</strong><span>${esc(s.description)}</span></a>`).join('')}
+  const dots = ['lime', 'coral', 'violet', 'pink'];
+  const mega = `<div class="mega"><div class="mega__in">
+    ${data.schools.map((s, i) => `<a class="mega__item mega__item--${dots[i]}" href="school-${s.id}.html"><span class="mega__dot"></span><strong>${esc(s.name)}</strong><span>${esc(s.description)}</span></a>`).join('')}
+    <a class="mega__all" href="schools.html">All schools ${icon('arrow')}</a>
   </div></div>`;
   const links = NAV.map(([h, l, m]) => m
     ? `<div class="nav__has-mega"><a href="${h}"${isCur(h)} aria-haspopup="true">${l}${icon('chevron', 'i--sm')}</a>${mega}</div>`
     : `<a href="${h}"${isCur(h)}>${l}</a>`).join('');
   const mobile = NAV.map(([h, l]) => `<li><a href="${h}">${l}</a></li>`).join('') + '<li><a href="admissions.html">Admissions</a></li><li><a href="contact.html">Contact</a></li>';
-  return `<header class="site-header" data-header><div class="wrap site-header__in">
-  <a class="brand" href="index.html" aria-label="SLTSC Academy — home"><span class="brand__mark" aria-hidden="true">S</span><span class="brand__text">SLTSC<small>Academy</small></span></a>
+  return `<header class="site-header" data-header><div class="site-header__bar">
+  <a class="brand" href="index.html" aria-label="SLTSC Academy — home"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="8" cy="9" r="3.2"/><circle cx="24" cy="9" r="3.2"/><circle cx="16" cy="24" r="3.2"/><path d="M8 9 24 9M8 9l8 15M24 9l-8 15" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><span class="brand__text">sltsc<small>academy</small></span></a>
   <nav class="nav" aria-label="Primary">${links}</nav>
   <div class="site-header__cta"><a class="btn btn--primary btn--sm" href="admissions.html">Apply now</a><button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer" data-burger>${icon('menu')}</button></div>
   </div>
@@ -130,7 +131,7 @@ function footer() {
   const c = data.config;
   return `<footer class="site-footer"><div class="wrap">
   <div class="site-footer__top">
-    <div class="site-footer__brand"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true">S</span><span class="brand__text">SLTSC<small>Academy</small></span></a>
+    <div class="site-footer__brand"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="8" cy="9" r="3.2"/><circle cx="24" cy="9" r="3.2"/><circle cx="16" cy="24" r="3.2"/><path d="M8 9 24 9M8 9l8 15M24 9l-8 15" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><span class="brand__text">sltsc<small>academy</small></span></a>
     <p>Learn with guidance. Practise with real tools. See your next step clearly.</p>
     <form class="subscribe" data-demo-form novalidate><label class="sr-only" for="sub-email">Email address</label><input id="sub-email" type="email" placeholder="Your email address" required autocomplete="email"><button class="btn btn--primary" type="submit">Subscribe</button><p class="form-note" role="status" data-note></p></form></div>
     <div class="site-footer__col"><h4>Academy</h4><ul><li><a href="about.html">About</a></li><li><a href="founder.html">Founder</a></li><li><a href="faculty.html">Faculty</a></li><li><a href="schools.html">Schools</a></li></ul></div>
@@ -138,6 +139,7 @@ function footer() {
     <div class="site-footer__col"><h4>Connect</h4><ul><li><a href="tel:+${c.whatsapp}">${esc(c.phone)}</a></li><li><a href="https://wa.me/${c.whatsapp}">WhatsApp</a></li><li><a href="community.html">Community</a></li><li><a href="contact.html">Contact</a></li></ul></div>
   </div>
   <p class="site-footer__legal">Content marked <strong>Demo info</strong> is placeholder text, to be confirmed by SLTSC. SLTSC Academy is an official Cisco Networking Academy. Cisco, CCNA and Cisco Networking Academy are trademarks of Cisco Systems, Inc.</p>
+  <div class="site-footer__word" aria-hidden="true">sltsc</div>
   <div class="site-footer__base"><span>© 2026 SLTSC Academy · Demo build</span><a href="#top">Back to top ${icon('arrow-up-right', 'i--sm')}</a></div>
   </div></footer>
   <a class="wa" href="https://wa.me/${c.whatsapp}" aria-label="Chat with SLTSC Academy on WhatsApp">${icon('chat')}</a>`;
@@ -153,12 +155,12 @@ function layout({ file, title, description, body, hero = false }) {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(t)}</title>
 <meta name="description" content="${esc(description)}">
-<meta name="theme-color" content="#0f1623">
+<meta name="theme-color" content="#0b0912">
 <script>document.documentElement.classList.add("js")</script>
 <meta property="og:title" content="${esc(t)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Lexend:wght@400..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=JetBrains+Mono:wght@400..700&display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body class="${hero ? 'has-hero' : ''}" id="top">
