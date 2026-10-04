@@ -1,0 +1,146 @@
+[
+ {
+  "id": "ccna",
+  "title": "CCNA 200-301 v2 (New Syllabus)",
+  "school": "networking",
+  "level": "Cisco Networking Academy course",
+  "duration": "8 months",
+  "mode": "Mode and schedule to be confirmed",
+  "fee": "LKR 31,500 · instalments available",
+  "intake": "Next batch: to be announced",
+  "image": {
+   "photo": "networking2"
+  },
+  "badge": "Official Cisco Networking Academy course"
+ },
+ {
+  "id": "networking-foundations",
+  "title": "Networking Foundations",
+  "school": "networking",
+  "level": "Foundation short course",
+  "duration": "6 weeks",
+  "mode": "Live online + replay",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "networking3"
+  }
+ },
+ {
+  "id": "network-automation",
+  "title": "Network Automation with Python",
+  "school": "networking",
+  "level": "Advanced short course",
+  "duration": "8 weeks",
+  "mode": "Live online + projects",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "networking4"
+  }
+ },
+ {
+  "id": "cyber-foundations",
+  "title": "Cybersecurity Foundations",
+  "school": "cybersecurity",
+  "level": "Foundation short course",
+  "duration": "6 weeks",
+  "mode": "Live online + labs",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "cybersecurity2"
+  }
+ },
+ {
+  "id": "cyberops",
+  "title": "CyberOps Associate Preparation",
+  "school": "cybersecurity",
+  "level": "Professional certificate",
+  "duration": "12 weeks",
+  "mode": "Live online + labs",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "cybersecurity3"
+  }
+ },
+ {
+  "id": "ethical-hacking",
+  "title": "Ethical Hacking Essentials",
+  "school": "cybersecurity",
+  "level": "Professional certificate",
+  "duration": "10 weeks",
+  "mode": "Controlled practice labs",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "cybersecurity4"
+  }
+ },
+ {
+  "id": "web-foundations",
+  "title": "Web Development Foundations",
+  "school": "software",
+  "level": "Foundation short course",
+  "duration": "8 weeks",
+  "mode": "Live online + portfolio",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "coding2"
+  }
+ },
+ {
+  "id": "python",
+  "title": "Programming Basics with Python",
+  "school": "software",
+  "level": "Foundation certificate",
+  "duration": "8 weeks",
+  "mode": "Live online + exercises",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "coding3"
+  }
+ },
+ {
+  "id": "frontend-react",
+  "title": "Front-end Web Development",
+  "school": "software",
+  "level": "Professional certificate",
+  "duration": "12 weeks",
+  "mode": "Live online + portfolio",
+  "fee": "Demo fee",
+  "intake": "Demo intake",
+  "image": {
+   "photo": "coding4"
+  }
+ },
+ {
+  "id": "cloud-data",
+  "title": "Cloud & Data Foundations",
+  "school": "data",
+  "level": "Future school",
+  "duration": "8 weeks",
+  "mode": "Demo info",
+  "fee": "Demo fee",
+  "intake": "Future",
+  "image": {
+   "photo": "abstract1"
+  }
+ },
+ {
+  "id": "applied-ai",
+  "title": "Applied AI for IT Learners",
+  "school": "data",
+  "level": "Future school",
+  "duration": "8 weeks",
+  "mode": "Demo info",
+  "fee": "Demo fee",
+  "intake": "Future",
+  "image": {
+   "photo": "abstract2"
+  }
+ }
+]

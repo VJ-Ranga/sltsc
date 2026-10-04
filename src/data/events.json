@@ -1,0 +1,26 @@
+[
+ {
+  "title": "Online academy orientation",
+  "date": "Demo date",
+  "type": "Orientation",
+  "image": {
+   "photo": "events2"
+  }
+ },
+ {
+  "title": "Network lab walkthrough",
+  "date": "Demo date",
+  "type": "Workshop",
+  "image": {
+   "photo": "events3"
+  }
+ },
+ {
+  "title": "Cybersecurity pathway Q&A",
+  "date": "Demo date",
+  "type": "Live session",
+  "image": {
+   "photo": "events4"
+  }
+ }
+]

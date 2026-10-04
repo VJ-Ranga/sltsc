@@ -1,0 +1,34 @@
+[
+ {
+  "quote": "The learning journey shown here is a demo story awaiting client-approved learner evidence.",
+  "name": "Demo learner one",
+  "role": "Networking pathway · Demo info",
+  "image": {
+   "photo": "portraits5"
+  }
+ },
+ {
+  "quote": "A practical, guided route into technology starts with knowing your next step.",
+  "name": "Demo learner two",
+  "role": "Software pathway · Demo info",
+  "image": {
+   "photo": "portraits6"
+  }
+ },
+ {
+  "quote": "Clear practice makes a new technical subject feel possible.",
+  "name": "Demo learner three",
+  "role": "Cybersecurity pathway · Demo info",
+  "image": {
+   "photo": "portraits7"
+  }
+ },
+ {
+  "quote": "A supportive cohort gives every question somewhere to go.",
+  "name": "Demo learner four",
+  "role": "Online learner · Demo info",
+  "image": {
+   "photo": "portraits8"
+  }
+ }
+]

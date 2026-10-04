@@ -1,0 +1,39 @@
+[
+ {
+  "name": "Yasiru Nirmala Herath",
+  "role": "Founder & Lead Instructor",
+  "school": "all",
+  "image": {
+   "photo": "instructor1"
+  },
+  "badge": "Demo photo",
+  "confirmed": true
+ },
+ {
+  "name": "Programme Mentor",
+  "role": "Networking & Infrastructure",
+  "school": "networking",
+  "image": {
+   "photo": "portraits1"
+  },
+  "badge": "Demo faculty"
+ },
+ {
+  "name": "Security Mentor",
+  "role": "Cybersecurity",
+  "school": "cybersecurity",
+  "image": {
+   "photo": "portraits3"
+  },
+  "badge": "Demo faculty"
+ },
+ {
+  "name": "Development Mentor",
+  "role": "Software & Web",
+  "school": "software",
+  "image": {
+   "photo": "portraits4"
+  },
+  "badge": "Demo faculty"
+ }
+]
