@@ -18,8 +18,8 @@ Static, dependency-free demo site for SLTSC Academy, plus the planning vault (`0
 ## Commands
 
 ```sh
-node src/build.js    # regenerate demo/ (32 pages)
-node src/verify.js   # static checks on demo/
+node src/build.js    # regenerate demo-v2/ (32 pages)
+node src/verify.js   # static checks on demo-v2/
 ```
 
 Open `demo-v2/index.html` in a browser (or serve the repo root; `index.html` redirects to the demo).
