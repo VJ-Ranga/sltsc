@@ -10,9 +10,9 @@ Static, dependency-free demo site for SLTSC Academy, plus the planning vault (`0
 | `src/pages/*.js` | One template function per page (home, about, learn, more) |
 | `src/lib.js` | Shared helpers + components (header, footer, cards, banners, icons) |
 | `src/css/site.css`, `src/js/site.js` | The only stylesheet and script |
-| `src/build.js` | Generates every page into `demo/` |
+| `src/build.js` | Generates every page into `demo-v2/` |
 | `src/verify.js` | Checks the generated site (titles, one `<h1>`, alt text, links, icons) |
-| `demo/` | **Generated output.** Do not edit by hand. |
+| `demo-v2/` | **Generated output.** Do not edit by hand. |
 | `demo-v1/` | The first, rejected demo (kept for reference) |
 
 ## Commands
@@ -22,7 +22,7 @@ node src/build.js    # regenerate demo/ (32 pages)
 node src/verify.js   # static checks on demo/
 ```
 
-Open `demo/index.html` in a browser (or serve the repo root; `index.html` redirects to the demo).
+Open `demo-v2/index.html` in a browser (or serve the repo root; `index.html` redirects to the demo).
 
 ## Content rules
 

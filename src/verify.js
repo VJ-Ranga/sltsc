@@ -1,8 +1,8 @@
 'use strict';
-// node src/verify.js — static checks on the generated site in ./demo
+// node src/verify.js — static checks on the generated site in ./demo-v2
 const fs = require('fs');
 const path = require('path');
-const OUT = path.join(__dirname, '..', 'demo');
+const OUT = path.join(__dirname, '..', 'demo-v2');
 const files = fs.readdirSync(OUT).filter(f => f.endsWith('.html'));
 const fails = [];
 const fail = m => fails.push(m);

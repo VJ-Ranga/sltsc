@@ -1,5 +1,5 @@
 'use strict';
-// Static site generator: node src/build.js  ->  writes ./demo
+// Static site generator: node src/build.js  ->  writes ./demo-v2
 const fs = require('fs');
 const path = require('path');
 const { data, layout } = require('./lib');
@@ -9,7 +9,7 @@ const learn = require('./pages/learn');
 const more = require('./pages/more');
 
 const ROOT = path.join(__dirname, '..');
-const OUT = path.join(ROOT, 'demo');
+const OUT = path.join(ROOT, 'demo-v2');
 
 const pages = [];
 const add = (file, page) => pages.push({ file, ...page });
@@ -42,4 +42,4 @@ fs.copyFileSync(path.join(__dirname, 'css/site.css'), path.join(OUT, 'assets/css
 fs.copyFileSync(path.join(__dirname, 'js/site.js'), path.join(OUT, 'assets/js/site.js'));
 fs.copyFileSync(path.join(__dirname, 'favicon.svg'), path.join(OUT, 'assets/favicon.svg'));
 
-console.log(`Built ${pages.length} pages -> demo/`);
+console.log(`Built ${pages.length} pages -> demo-v2/`);
