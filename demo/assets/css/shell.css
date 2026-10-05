@@ -1,22 +1,24 @@
 /* SLTSC shell — modern header, footer, buttons and tokens (shared by every page) */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root{
-  --nx-ink:#07122e;
-  --nx-ink-2:#40506e;
+  --nx-ink:#0b1f3a;
+  --nx-ink-2:#4a5a70;
   --nx-bg:#ffffff;
-  --nx-soft:#eff6ff;
-  --nx-indigo:#0b2a6b;
-  --nx-deep:#071a4a;
-  --nx-violet:#2563eb;
-  --nx-accent:#06b6d4;
-  --nx-cyan:#18c5ff;
-  --nx-yellow:#ffd23f;
-  --nx-mint:#5ef2c0;
-  --nx-grad:linear-gradient(135deg,#2563eb 0%,#06b6d4 100%);
-  --nx-line:rgba(11,42,107,.12);
-  --nx-radius:28px;
-  --nx-font:'Sora',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --nx-soft:#f1f5fa;
+  --nx-blue:#0a4fb3;
+  --nx-blue-d:#083d8c;
+  --nx-indigo:#0a2a5c;
+  --nx-deep:#0a2a5c;
+  --nx-violet:#0a4fb3;
+  --nx-accent:#0a4fb3;
+  --nx-cyan:#0a4fb3;
+  --nx-yellow:#ffc629;
+  --nx-mint:#ffc629;
+  --nx-grad:#0a4fb3;
+  --nx-line:#dbe3ee;
+  --nx-radius:6px;
+  --nx-font:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   --nx-ease:cubic-bezier(.2,.75,.25,1);
 }
 
@@ -24,10 +26,10 @@
 .nx-c{width:min(1200px,calc(100% - 48px));margin-inline:auto}
 
 /* ---------- Buttons ---------- */
-.nx-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:0 1.5rem;border-radius:999px;border:1.5px solid transparent;font:700 .95rem/1 var(--nx-font);text-decoration:none;cursor:pointer;transition:transform .25s var(--nx-ease),box-shadow .25s var(--nx-ease),background .25s,color .25s,border-color .25s;white-space:nowrap}
+.nx-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:0 1.5rem;border-radius:4px;border:1.5px solid transparent;font:700 .95rem/1 var(--nx-font);text-decoration:none;cursor:pointer;transition:transform .25s var(--nx-ease),box-shadow .25s var(--nx-ease),background .25s,color .25s,border-color .25s;white-space:nowrap}
 .nx-btn:hover{transform:translateY(-2px)}
-.nx-btn--grad{background:var(--nx-grad);color:#fff;box-shadow:0 10px 28px rgba(37,99,235,.35)}
-.nx-btn--grad:hover{box-shadow:0 14px 34px rgba(6,182,212,.4)}
+.nx-btn--grad{background:var(--nx-grad);color:#fff;}
+.nx-btn--grad:hover{}
 .nx-btn--dark{background:var(--nx-ink);color:#fff}
 .nx-btn--dark:hover{background:var(--nx-indigo)}
 .nx-btn--light{background:#fff;color:var(--nx-ink)}
@@ -39,21 +41,21 @@
 
 /* ---------- Header ---------- */
 .nx-header{position:sticky;top:0;z-index:50;padding:14px 0;font-family:var(--nx-font)}
-.nx-bar{display:flex;align-items:center;gap:1.5rem;height:64px;padding:0 10px 0 22px;background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);border:1px solid var(--nx-line);border-radius:999px;box-shadow:0 8px 30px rgba(11,42,107,.08)}
+.nx-bar{display:flex;align-items:center;gap:1.5rem;height:64px;padding:0 10px 0 22px;background:rgba(255,255,255,.82);border:1px solid var(--nx-line);border-radius:4px;}
 .nx-brand{display:flex;align-items:center;gap:.65rem;color:var(--nx-ink);font-weight:800;font-size:1.2rem;letter-spacing:-.03em;text-decoration:none}
-.nx-brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:var(--nx-grad);color:#fff;font-size:1rem;font-weight:800;transform:rotate(-6deg)}
+.nx-brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:6px;background:var(--nx-grad);color:#fff;font-size:1rem;font-weight:800;}
 .nx-brand i{font-style:normal;color:var(--nx-accent)}
 .nx-nav{display:flex;align-items:center;gap:.25rem;margin-left:auto}
-.nx-nav>a,.nx-dd>button{white-space:nowrap;display:inline-flex;align-items:center;gap:.3rem;padding:.55rem .95rem;border:0;background:none;border-radius:999px;color:var(--nx-ink);font:600 .92rem/1 var(--nx-font);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.nx-nav>a,.nx-dd>button{white-space:nowrap;display:inline-flex;align-items:center;gap:.3rem;padding:.55rem .95rem;border:0;background:none;border-radius:4px;color:var(--nx-ink);font:600 .92rem/1 var(--nx-font);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
 .nx-nav>a:hover,.nx-dd>button:hover,.nx-dd:focus-within>button{background:var(--nx-soft);color:var(--nx-violet)}
 .nx-nav>a[aria-current="page"]{color:var(--nx-violet)}
 .nx-dd{position:relative}
 .nx-dd>button svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.4;transition:transform .2s}
 .nx-dd:hover>button svg,.nx-dd:focus-within>button svg{transform:rotate(180deg)}
-.nx-dd-panel{position:absolute;top:calc(100% + 14px);left:50%;width:380px;padding:10px;background:#fff;border:1px solid var(--nx-line);border-radius:22px;box-shadow:0 24px 60px rgba(11,42,107,.16);opacity:0;visibility:hidden;transform:translate(-50%,8px);transition:.22s var(--nx-ease)}
+.nx-dd-panel{position:absolute;top:calc(100% + 14px);left:50%;width:380px;padding:10px;background:#fff;border:1px solid var(--nx-line);border-radius:6px;opacity:0;visibility:hidden;transform:translate(-50%,8px);transition:.22s var(--nx-ease)}
 .nx-dd-panel::before{content:'';position:absolute;inset:-16px 0 auto;height:16px}
 .nx-dd:hover .nx-dd-panel,.nx-dd:focus-within .nx-dd-panel{opacity:1;visibility:visible;transform:translate(-50%,0)}
-.nx-dd-panel a{display:block;padding:.8rem 1rem;border-radius:14px;color:var(--nx-ink);text-decoration:none;transition:background .2s}
+.nx-dd-panel a{display:block;padding:.8rem 1rem;border-radius:6px;color:var(--nx-ink);text-decoration:none;transition:background .2s}
 .nx-dd-panel a:hover{background:var(--nx-soft)}
 .nx-dd-panel strong{display:block;font-size:.95rem}
 .nx-dd-panel span{display:block;margin-top:.15rem;color:var(--nx-ink-2);font-size:.8rem;line-height:1.4}
@@ -95,8 +97,35 @@ body.nx-lock{overflow:hidden}
 .nx-foot-bottom{position:relative;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;font-size:.82rem}
 @media(max-width:860px){.nx-foot-top{grid-template-columns:1fr 1fr;gap:2.5rem}.nx-foot-about{grid-column:1/-1}}
 
-.nx-wa{position:fixed;right:20px;bottom:20px;z-index:40;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 12px 30px rgba(37,211,102,.45);transition:transform .25s var(--nx-ease)}
+.nx-wa{position:fixed;right:20px;bottom:20px;z-index:40;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;transition:transform .25s var(--nx-ease)}
 .nx-wa:hover{transform:scale(1.08)}
 .nx-wa svg{width:28px;height:28px;fill:currentColor}
 
 .nx-footer .nx-btn--light{color:var(--nx-ink)}
+
+/* ===== Flat university layer ===== */
+.nx-top{background:var(--nx-deep);color:#fff;font:500 .8rem/1 var(--nx-font)}
+.nx-top .nx-c{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:38px}
+.nx-top b{color:var(--nx-yellow);font-weight:700}
+.nx-top nav{display:flex;gap:1.4rem}
+.nx-top a{color:#fff;text-decoration:none;opacity:.85}
+.nx-top a:hover{opacity:1}
+.nx-header{padding:0;background:#fff;border-bottom:1px solid var(--nx-line)}
+.nx-bar{height:76px;padding:0;background:none;border:0;border-radius:0}
+.nx-brand-mark{border-radius:4px;background:var(--nx-blue)}
+.nx-brand i{color:var(--nx-yellow)}
+.nx-nav>a,.nx-dd>button{border-radius:4px}
+.nx-nav>a[aria-current="page"]{color:var(--nx-blue);box-shadow:inset 0 -3px 0 var(--nx-yellow);border-radius:0}
+.nx-dd-panel{border-radius:6px;border-top:3px solid var(--nx-blue)}
+.nx-btn{border-radius:4px;min-height:46px}
+.nx-btn:hover{transform:none}
+.nx-btn--grad{background:var(--nx-yellow);color:var(--nx-ink)}
+.nx-btn--grad:hover{background:#f2b600}
+.nx-btn--dark{background:var(--nx-blue)}
+.nx-btn--dark:hover{background:var(--nx-blue-d)}
+.nx-btn--ghost:hover{border-color:var(--nx-blue);color:var(--nx-blue)}
+.nx-footer::before{display:none}
+.nx-footer{background:var(--nx-deep);padding-top:4rem}
+.nx-wa{border-radius:50%}
+@media(max-width:960px){.nx-top nav{display:none}.nx-bar{height:66px}}
+@media(max-width:560px){.nx-top{display:none}}

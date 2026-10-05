@@ -16,7 +16,7 @@
 
   /* ---------- building blocks ---------- */
   const hero = ({ crumbs, eyebrow, title, lead, img, cta = '' }) => `
-    <section class="ph"><div class="nx-c ph-grid ${img ? '' : 'no-img'}">
+    <section class="ph"><div class="ph-grid ${img ? '' : 'no-img'}">
       <div>
         <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a>${crumbs.map(c => `<span>/</span>${c[1] ? `<a href="${c[1]}">${c[0]}</a>` : `<span>${c[0]}</span>`}`).join('')}</nav>
         <span class="eyebrow">${eyebrow}</span>
@@ -62,7 +62,7 @@
       + cta('Bring your next question.', 'Yasiru answers learners directly.', 'WhatsApp Yasiru', WA);
   };
 
-  pages.schools = () => hero({ crumbs: [['Schools']], eyebrow: 'The academy map', title: 'Find the school that fits your <span class="grad-text">next step.</span>', lead: 'Each school is a focused doorway into technology. The future school is clearly marked so today’s options stay honest.' })
+  pages.schools = () => hero({ crumbs: [['Schools']], eyebrow: 'The academy map', title: 'Find the school that fits your <span class="grad-text">next step.</span>', lead: 'Each school is a focused doorway into technology. The future school is clearly marked so today’s options stay honest.', img: small('students2') })
     + sec(`<div class="bento">${site.schools.map(s => `<a class="school rv" href="${s.future ? 'school-data.html' : `school-${s.id}.html`}"><img src="${s.image.url}" alt="${esc(s.image.alt)}" loading="lazy"><span class="school-tag">${s.future ? 'Future school' : `${site.programs.filter(p => p.school === s.id).length} programmes`}</span><span class="school-go">${diag}</span><h3>${s.name}</h3><p>${s.description}</p></a>`).join('')}</div>`)
     + sec(head('How progress works', 'A ladder, not a dead end.', 'Start with a manageable course, build confidence through a certificate, and keep the next level visible.') + boxes([['01', 'Short course', 'A focused introduction to one practical capability.'], ['02', 'Certificate', 'A structured route through a broader skill set.'], ['03', 'Diploma', 'A deeper future pathway — demo info.'], ['04', 'Degree pathway', 'Future direction — subject to confirmation.']], 4), 'sec--soft')
     + cta('Not sure yet? Start with a conversation.', '', 'Talk to the academy', 'contact.html');
@@ -90,7 +90,7 @@
         <form class="form rv" id="interest-form" novalidate><h3>Register interest</h3><div class="fields"><div class="field"><label for="i-name">Full name</label><input id="i-name" name="name" required></div><div class="field"><label for="i-email">Email</label><input id="i-email" type="email" name="email" required></div><div class="field field--full"><label for="i-int">What interests you?</label><textarea id="i-int" name="interest" required></textarea></div></div><button class="nx-btn nx-btn--grad" type="submit" style="margin-top:1.2rem">Register interest</button><p class="form-msg" role="status"></p></form></div>`);
   };
 
-  pages.programs = () => hero({ crumbs: [['Programmes']], eyebrow: 'Find your direction', title: 'Programmes built for your <span class="grad-text">next capability.</span>', lead: 'Start with foundations, prepare for a professional exam, or keep building toward the technology path that fits you.' })
+  pages.programs = () => hero({ crumbs: [['Programmes']], eyebrow: 'Find your direction', title: 'Programmes built for your <span class="grad-text">next capability.</span>', lead: 'Start with foundations, prepare for a professional exam, or keep building toward the technology path that fits you.', img: small('students4') })
     + sec(`<div class="bar-in"><input id="q" type="search" placeholder="Search programmes" aria-label="Search programmes"><select id="f-school" aria-label="School"><option value="all">All schools</option>${site.schools.map(s => `<option value="${s.id}">${s.short}</option>`).join('')}</select><select id="f-level" aria-label="Level"><option value="all">All levels</option><option value="foundation">Foundation</option><option value="professional">Professional</option><option value="advanced">Advanced</option><option value="cisco">Cisco course</option><option value="future">Future</option></select><select id="f-sort" aria-label="Sort"><option value="title">A–Z</option><option value="duration">Shortest first</option></select></div><p class="count" id="count"></p><div class="cards" id="results"></div>`, 'sec--tight');
 
   pages.program = () => {
@@ -142,7 +142,7 @@
   pages.news = () => {
     const a = site.articles;
     const f = a[0];
-    return hero({ crumbs: [['Insights']], eyebrow: 'News · learning notes · events', title: 'Ideas for <span class="grad-text">what’s next.</span>', lead: 'Useful context for your next step in IT — learning paths, practical work, and the people around the academy.' })
+    return hero({ crumbs: [['Insights']], eyebrow: 'News · learning notes · events', title: 'Ideas for <span class="grad-text">what’s next.</span>', lead: 'Useful context for your next step in IT — learning paths, practical work, and the people around the academy.', img: small('students5') })
       + sec(`<a class="split rv" href="article.html?id=${encodeURIComponent(f.id)}" style="text-decoration:none"><div class="img-frame"><img src="${f.image.url}" alt="${esc(f.image.alt)}"></div><div><span class="eyebrow">Featured · ${esc(f.category)}</span><h2>${esc(f.title)}</h2><p>${esc(f.excerpt)}</p><span class="pcard-link" style="margin-top:1.2rem;display:inline-flex">Read the insight ${arrow}</span></div></a>`, 'sec--tight')
       + sec(`<div class="tabs" id="tabs">${['All', 'Learning paths', 'Online learning', 'Student experience', 'Networking', 'Cybersecurity'].map((t, i) => `<button class="tab${i ? '' : ' is-active'}" data-f="${t}">${t}</button>`).join('')}</div><div class="news" id="articles"></div>`, 'sec--soft');
   };
@@ -165,16 +165,16 @@
     ['Technical', 'What do I need to join a class?', 'A reliable internet connection and a suitable device. Exact requirements are demo information.'],
     ['Online learning', 'Are recordings available?', 'Replay access is part of the proposed model; availability and retention are to be confirmed.']
   ];
-  pages.faq = () => hero({ crumbs: [['FAQ']], eyebrow: 'Answers, clearly', title: 'Questions before your <span class="grad-text">next step?</span>', lead: 'Search the answers below. Final admissions, payment and certification details are to be confirmed.' })
+  pages.faq = () => hero({ crumbs: [['FAQ']], eyebrow: 'Answers, clearly', title: 'Questions before your <span class="grad-text">next step?</span>', lead: 'Search the answers below. Final admissions, payment and certification details are to be confirmed.', img: small('instructor3') })
     + sec(`<div class="bar-in" style="grid-template-columns:1fr"><input id="faq-q" type="search" placeholder="Search your question" aria-label="Search FAQs"></div><div class="tabs" id="tabs">${['All', 'Admissions', 'Online learning', 'Payments', 'Certifications', 'Technical'].map((t, i) => `<button class="tab${i ? '' : ' is-active'}" data-f="${t}">${t}</button>`).join('')}</div><div class="acc" id="faq-list" style="max-width:860px"></div>`, 'sec--tight')
     + cta('Still have a question?', 'Talk to a human about your next step.', 'Contact the academy', 'contact.html');
 
-  pages.contact = () => hero({ crumbs: [['Contact']], eyebrow: 'Start a conversation', title: 'Tell us what you want to learn <span class="grad-text">next.</span>', lead: 'A clear answer starts with a good question.' })
+  pages.contact = () => hero({ crumbs: [['Contact']], eyebrow: 'Start a conversation', title: 'Tell us what you want to learn <span class="grad-text">next.</span>', lead: 'A clear answer starts with a good question.', img: small('online_class4') })
     + sec(`<div class="split split--top"><div class="rv"><span class="eyebrow">Contact the academy</span><h2>We’d love to hear from you.</h2><div class="cinfo"><div><small>Call or WhatsApp</small><strong><a href="tel:+94718000849">${site.config.phone}</a></strong><span class="muted">Availability to be confirmed</span></div><div><small>Email</small><strong><a href="mailto:hello@sltsc.academy">hello@sltsc.academy</a></strong><span class="muted">Placeholder inbox</span></div><div><small>Office hours</small><strong>Monday – Friday</strong><span class="muted">Demo hours — to be confirmed</span></div></div></div>
       <form class="form rv" id="enquiry-form" novalidate><h2 style="font-size:1.8rem">Send an enquiry</h2><div class="fields"><div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required autocomplete="name"></div><div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" required autocomplete="tel"></div><div class="field"><label for="c-email">Email</label><input id="c-email" type="email" name="email" required autocomplete="email"></div><div class="field"><label for="c-prog">Programme</label><select id="c-prog" name="programme" required><option value="">Choose a programme</option>${site.programs.map(p => `<option value="${p.id}">${p.title}</option>`).join('')}</select></div><div class="field field--full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div><input class="hp" tabindex="-1" autocomplete="off" name="website" aria-hidden="true"></div><label class="consent"><input type="checkbox" required> I understand this is a demo form and contact details are placeholders.</label><button class="nx-btn nx-btn--grad" type="submit">Send enquiry</button><p class="form-msg" role="status"></p></form></div>`, 'sec--tight')
     + cta('Looking for corporate training for your team?', 'Let’s talk about a practical programme.', 'Enquire for your team', 'mailto:hello@sltsc.academy');
 
-  pages.faculty = () => hero({ crumbs: [['Faculty']], eyebrow: 'People behind the pathway', title: 'Meet the <span class="grad-text">faculty.</span>', lead: 'Guidance that keeps learning human.' })
+  pages.faculty = () => hero({ crumbs: [['Faculty']], eyebrow: 'People behind the pathway', title: 'Meet the <span class="grad-text">faculty.</span>', lead: 'Guidance that keeps learning human.', img: small('instructor2') })
     + sec(`<div class="tabs" id="tabs"><button class="tab is-active" data-f="all">All schools</button>${['networking', 'cybersecurity', 'software'].map(s => `<button class="tab" data-f="${s}">${school(s).short}</button>`).join('')}</div><div class="people" id="people"></div>${demo('Demo faculty — to be confirmed')}`, 'sec--tight');
 
   /* ---------- render ---------- */
