@@ -98,3 +98,5 @@ body.nx-lock{overflow:hidden}
 .nx-wa{position:fixed;right:20px;bottom:20px;z-index:40;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 12px 30px rgba(37,211,102,.45);transition:transform .25s var(--nx-ease)}
 .nx-wa:hover{transform:scale(1.08)}
 .nx-wa svg{width:28px;height:28px;fill:currentColor}
+
+.nx-footer .nx-btn--light{color:var(--nx-ink)}

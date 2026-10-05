@@ -217,3 +217,5 @@ body.nx-home{margin:0;background:var(--nx-bg);color:var(--nx-ink);font:400 17px/
   .nl{flex-direction:column;border-radius:26px;padding:.6rem}
   .nl input{min-height:46px}
 }
+
+.nx-home .muted{color:var(--nx-ink-2)}
