@@ -1,6 +1,6 @@
 (function () {
   if (!document.querySelector('link[href*="shell.css"]')) {
-    const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'assets/css/shell.css?v=4'; document.head.append(l);
+    const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'assets/css/shell.css?v=5'; document.head.append(l);
   }
   const site = window.SLTSC;
   const $ = (s, c = document) => c.querySelector(s);
