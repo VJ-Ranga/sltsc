@@ -7,7 +7,7 @@ body.nx-home{margin:0;background:var(--nx-bg);color:var(--nx-ink);font:400 17px/
 .nx-home h1,.nx-home h2,.nx-home h3{font-weight:800;letter-spacing:-.03em;line-height:1.05}
 .nx-home h2{font-size:clamp(2.2rem,4.6vw,3.6rem)}
 .nx-home h3{font-size:1.35rem;letter-spacing:-.02em;line-height:1.2}
-.nx-home a{color:inherit}
+:where(.nx-home) a{color:inherit}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip-link{position:absolute;left:1rem;top:-5rem;z-index:99;padding:.7rem 1rem;border-radius:6px;background:var(--nx-yellow);color:var(--nx-ink);font-weight:700}
 .skip-link:focus{top:1rem}

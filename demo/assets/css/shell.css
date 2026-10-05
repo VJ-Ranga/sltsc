@@ -129,3 +129,12 @@ body.nx-lock{overflow:hidden}
 .nx-wa{border-radius:50%}
 @media(max-width:960px){.nx-top nav{display:none}.nx-bar{height:66px}}
 @media(max-width:560px){.nx-top{display:none}}
+.nx-header .nx-brand i{color:var(--nx-blue)}
+
+/* floating buttons: WhatsApp left, back-to-top right */
+.nx-wa{right:auto;left:20px}
+.nx-totop{position:fixed;right:20px;bottom:20px;z-index:40;display:grid;place-items:center;width:52px;height:52px;border:0;border-radius:4px;background:var(--nx-blue);color:#fff;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,visibility .25s,transform .25s,background .2s}
+.nx-totop.is-on{opacity:1;visibility:visible;transform:none}
+.nx-totop:hover{background:var(--nx-blue-d)}
+.nx-totop:focus-visible{outline:3px solid var(--nx-yellow);outline-offset:2px}
+.nx-totop svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
