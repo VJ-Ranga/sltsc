@@ -218,3 +218,26 @@
 
 .ph-img,.hero2-photo{position:relative;height:auto}
 .ph-img img,.hero2-photo img{position:absolute;inset:0}
+
+/* ===== Inner hero = homepage hero style: photo + navy panel ===== */
+.ph{position:relative;display:flex;align-items:flex-end;min-height:440px;background:var(--nx-deep)}
+.ph-grid{display:block;width:100%;max-width:none}
+.ph-img{position:absolute;inset:0;min-height:0;height:auto;transform:none}
+.ph-grid>div:first-child{position:relative;z-index:1;max-width:660px;margin:3.5rem 0 3.5rem max(24px,calc((100vw - 1200px)/2));padding:2.2rem 2.5rem;background:var(--nx-deep);color:#fff;border-top:5px solid var(--nx-yellow)}
+.ph-grid.no-img>div:first-child{padding-right:2.5rem}
+.ph h1{margin:.8rem 0 .8rem;font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.1;color:#fff}
+.ph h1 .grad-text{color:var(--nx-yellow)}
+.ph .lead{color:rgba(255,255,255,.85);font-size:1.02rem}
+.ph .eyebrow{color:var(--nx-yellow)}
+.crumb{margin-bottom:1rem;color:rgba(255,255,255,.7)}
+.crumb a{color:#fff}
+.ph .nx-btn--ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.ph .nx-btn--ghost:hover{border-color:#fff;color:#fff}
+@media(max-width:680px){
+  .ph{display:block;min-height:0}
+  .ph-img{position:relative;height:220px}
+  .ph-grid>div:first-child{max-width:none;margin:0;padding:1.8rem 24px}
+}
+.ph-grid{position:static}
+.ph-img{aspect-ratio:auto;max-width:none}
+@media(max-width:680px){.ph-grid{display:flex;flex-direction:column}.ph-img{order:-1;width:100%}}
