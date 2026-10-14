@@ -3,11 +3,434 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=demo/index.html">
-  <title>SLTSC Academy</title>
+  <meta name="description" content="Review the website design options prepared for Technological School of Computing.">
+  <meta name="theme-color" content="#001162">
+  <title>Website design options | TSC</title>
+  <link rel="icon" type="image/png" href="hub-assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #001162;
+      --royal: #0b5cc5;
+      --bright: #008ff5;
+      --sky: #e0f0fc;
+      --white: #ffffff;
+      --ink: #0b1644;
+      --muted: #536180;
+      --border: rgba(11, 92, 197, 0.15);
+      --shadow: 0 18px 45px rgba(0, 17, 98, 0.11);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(0, 143, 245, 0.16), transparent 28rem),
+        linear-gradient(180deg, #f7fbff 0%, var(--white) 34%, #f5faff 100%);
+      font-family: "Poppins", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--bright);
+      outline-offset: 4px;
+    }
+
+    .shell {
+      width: min(100% - 32px, 1180px);
+      margin-inline: auto;
+    }
+
+    .site-header {
+      padding: 30px 0 42px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      margin-bottom: 54px;
+    }
+
+    .brand img {
+      width: min(250px, 70vw);
+      height: auto;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 16px;
+      color: var(--royal);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 25px;
+      height: 3px;
+      border-radius: 99px;
+      background: var(--bright);
+      content: "";
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(2.3rem, 9vw, 5rem);
+      line-height: 1.03;
+      letter-spacing: -0.055em;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    main {
+      padding-bottom: 78px;
+    }
+
+    .options-heading {
+      margin: 0 0 22px;
+      color: var(--navy);
+      font-size: clamp(1.3rem, 3vw, 1.75rem);
+      line-height: 1.2;
+    }
+
+    .option-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 24px;
+    }
+
+    .option-card {
+      position: relative;
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .option-card.recommended {
+      border-color: rgba(0, 143, 245, 0.5);
+      box-shadow: 0 22px 55px rgba(0, 82, 175, 0.18);
+    }
+
+    .preview-wrap {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+      background: var(--sky);
+      aspect-ratio: 8 / 5;
+    }
+
+    .preview-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 300ms ease;
+    }
+
+    .option-card:hover .preview-wrap img {
+      transform: scale(1.018);
+    }
+
+    .badge {
+      position: absolute;
+      z-index: 1;
+      top: 14px;
+      right: 14px;
+      padding: 7px 12px;
+      border: 2px solid rgba(255, 255, 255, 0.85);
+      border-radius: 999px;
+      color: var(--white);
+      background: var(--royal);
+      box-shadow: 0 8px 18px rgba(0, 17, 98, 0.25);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .card-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .option-label {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: clamp(1.16rem, 2.2vw, 1.45rem);
+      line-height: 1.3;
+    }
+
+    .option-description {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px 18px;
+      margin-top: auto;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 11px 18px;
+      border-radius: 12px;
+      color: var(--white);
+      background: var(--royal);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 180ms ease, transform 180ms ease;
+    }
+
+    .button:hover {
+      background: var(--navy);
+      transform: translateY(-2px);
+    }
+
+    .new-tab {
+      color: var(--royal);
+      font-size: 0.84rem;
+      font-weight: 600;
+      text-underline-offset: 4px;
+    }
+
+    .review-box {
+      display: grid;
+      gap: 28px;
+      margin-top: 34px;
+      padding: 28px 24px;
+      overflow: hidden;
+      border-radius: 24px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 95% 15%, rgba(0, 143, 245, 0.42), transparent 16rem),
+        var(--navy);
+      box-shadow: var(--shadow);
+    }
+
+    .review-box h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      line-height: 1.2;
+    }
+
+    .review-box ol {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding-left: 1.25rem;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.94rem;
+    }
+
+    .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      min-height: 52px;
+      padding: 13px 20px;
+      border-radius: 14px;
+      color: var(--navy);
+      background: var(--white);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-link:hover {
+      color: var(--royal);
+      background: var(--sky);
+    }
+
+    .site-footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    @media (min-width: 720px) {
+      .shell {
+        width: min(100% - 56px, 1180px);
+      }
+
+      .site-header {
+        padding-top: 38px;
+        padding-bottom: 58px;
+      }
+
+      .option-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+      }
+
+      .review-box {
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        padding: 36px 40px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 <body>
-  <p>Opening <a href="demo/index.html">SLTSC Academy</a>...</p>
-  <script>window.location.replace('demo/index.html');</script>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="./" aria-label="Technological School of Computing design options home">
+        <img src="hub-assets/tsc-logo.png" alt="Technological School of Computing" width="1861" height="575">
+      </a>
+      <div class="hero">
+        <p class="eyebrow">Client review</p>
+        <h1>Website design options</h1>
+        <p class="intro">Please review each option and send your comments.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section aria-labelledby="options-title">
+      <h2 class="options-heading" id="options-title">Choose a design to explore</h2>
+      <div class="option-grid">
+        <article class="option-card recommended">
+          <div class="preview-wrap">
+            <span class="badge">Recommended · Newest</span>
+            <img src="hub-assets/preview-demo-premium.jpg" alt="Homepage preview of Option A, the premium rounded design" width="1200" height="750">
+          </div>
+          <div class="card-content">
+            <h3 class="option-label">Option A · Premium rounded</h3>
+            <p class="option-description">New brand colours and logo, with a rounded modern premium style.</p>
+            <div class="card-actions">
+              <a class="button" href="demo-premium/">View demo →</a>
+              <a class="new-tab" href="demo-premium/" target="_blank" rel="noopener">Open in new tab <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="option-card">
+          <div class="preview-wrap">
+            <img src="hub-assets/preview-demo-brand.jpg" alt="Homepage preview of Option B using the new brand colours" width="1200" height="750" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3 class="option-label">Option B · Brand colours</h3>
+            <p class="option-description">Current layout re-coloured with the new logo and palette.</p>
+            <div class="card-actions">
+              <a class="button" href="demo-brand/">View demo →</a>
+              <a class="new-tab" href="demo-brand/" target="_blank" rel="noopener">Open in new tab <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="option-card">
+          <div class="preview-wrap">
+            <img src="hub-assets/preview-demo.jpg" alt="Homepage preview of Option C in the earlier colour scheme" width="1200" height="750" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3 class="option-label">Option C · Current layout</h3>
+            <p class="option-description">Current site in the earlier colour scheme.</p>
+            <div class="card-actions">
+              <a class="button" href="demo/">View demo →</a>
+              <a class="new-tab" href="demo/" target="_blank" rel="noopener">Open in new tab <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="option-card">
+          <div class="preview-wrap">
+            <img src="hub-assets/preview-demo-v1.jpg" alt="Homepage preview of Option D, the first Signal Path concept" width="1200" height="750" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h3 class="option-label">Option D · First concept</h3>
+            <p class="option-description">First concept (Signal Path), kept here for reference.</p>
+            <div class="card-actions">
+              <a class="button" href="demo-v1/">View demo →</a>
+              <a class="new-tab" href="demo-v1/" target="_blank" rel="noopener">Open in new tab <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="review-box" aria-labelledby="review-title">
+      <div>
+        <h2 id="review-title">How to review</h2>
+        <ol>
+          <li>Open each option.</li>
+          <li>Check it on desktop and mobile.</li>
+          <li>Note what you like from each design.</li>
+          <li>Send your comments via WhatsApp.</li>
+        </ol>
+      </div>
+      <a class="whatsapp-link" href="https://wa.me/94718000849?text=Hi%2C%20my%20comments%20on%20the%20website%20design%20options%3A" target="_blank" rel="noopener">Send comments · +94 71 800 0849</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">Prepared by Cloudycode · Demo for review</div>
+  </footer>
 </body>
 </html>

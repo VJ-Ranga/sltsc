@@ -1,0 +1,274 @@
+{
+  "hero": [
+    {
+      "url": "https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Modern student learning with laptop",
+      "page": "https://unsplash.com/photos/c0c1ad479aee"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Young professional at computer workspace",
+      "page": "https://unsplash.com/photos/f4383dd59f5a"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1655635643486-a17bc48771ff?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Student studying online with technology",
+      "page": "https://unsplash.com/photos/a17bc48771ff"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1667264501379-c1537934c7ab?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Tech professional at modern desk",
+      "page": "https://unsplash.com/photos/c1537934c7ab"
+    }
+  ],
+  "online_class": [
+    {
+      "url": "https://images.unsplash.com/photo-1708807472445-d33589e6b090?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Video conference meeting setup",
+      "page": "https://unsplash.com/photos/d33589e6b090"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Person in video call meeting",
+      "page": "https://unsplash.com/photos/757bb62b4baf"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Virtual classroom workspace",
+      "page": "https://unsplash.com/photos/17105176677c"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Laptop showing online learning",
+      "page": "https://unsplash.com/photos/2e0a9bf2a9ae"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Remote learning workspace",
+      "page": "https://unsplash.com/photos/d307ca884978"
+    }
+  ],
+  "students": [
+    {
+      "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Group of students collaborating together",
+      "page": "https://unsplash.com/photos/49953e39b3ac"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Students studying on campus grounds",
+      "page": "https://unsplash.com/photos/d307ca884978"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Group of young students together",
+      "page": "https://unsplash.com/photos/47ba0277781c"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Diverse students on campus",
+      "page": "https://unsplash.com/photos/6f4ee915583e"
+    }
+  ],
+  "networking": [
+    {
+      "url": "https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Server rack infrastructure setup",
+      "page": "https://unsplash.com/photos/c0c1ad479aee"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Network cables and switch infrastructure",
+      "page": "https://unsplash.com/photos/f4383dd59f5a"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1625276254563-f0fbbf66a5e7?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Network infrastructure cabling",
+      "page": "https://unsplash.com/photos/f0fbbf66a5e7"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1594915440248-1e419eba6611?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Server room monitoring display",
+      "page": "https://unsplash.com/photos/1e419eba6611"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1667264501379-c1537934c7ab?auto=format&fit=crop&w=1600&q=80",
+      "alt": "IT infrastructure setup",
+      "page": "https://unsplash.com/photos/c1537934c7ab"
+    }
+  ],
+  "cybersecurity": [
+    {
+      "url": "https://images.unsplash.com/photo-1652739758426-56a564265f9e?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Security monitoring operations dashboard",
+      "page": "https://unsplash.com/photos/56a564265f9e"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1566245024852-04fbf7842ce9?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Cybersecurity lock and encryption system",
+      "page": "https://unsplash.com/photos/04fbf7842ce9"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Security operations center monitoring",
+      "page": "https://unsplash.com/photos/90230c4a4198"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1541214184964-d90ddf59c88b?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Dark terminal with security code display",
+      "page": "https://unsplash.com/photos/d90ddf59c88b"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1760228604788-db8a36d5c1a3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Network security monitoring interface",
+      "page": "https://unsplash.com/photos/db8a36d5c1a3"
+    }
+  ],
+  "coding": [
+    {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Software developer workspace setup",
+      "page": "https://unsplash.com/photos/d307ca884978"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Programming on desktop computer",
+      "page": "https://unsplash.com/photos/de2d4265fba3"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Programmer working intently",
+      "page": "https://unsplash.com/photos/6e28221b842b"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1523438097911-512253e64e87?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Code on screen development",
+      "page": "https://unsplash.com/photos/512253e64e87"
+    }
+  ],
+  "instructor": [
+    {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Teacher guiding student learning",
+      "page": "https://unsplash.com/photos/d307ca884978"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Professional instructor speaking",
+      "page": "https://unsplash.com/photos/a1c2e315a42f"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1500375592092-40eb084fb3a0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Professor teaching class",
+      "page": "https://unsplash.com/photos/40eb084fb3a0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1520763185298-1b434c919abe?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Workshop facilitator teaching",
+      "page": "https://unsplash.com/photos/1b434c919abe"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1531746790731-6c087266d339?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Mentor sharing knowledge",
+      "page": "https://unsplash.com/photos/6c087266d339"
+    }
+  ],
+  "graduation": [
+    {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Celebration of academic milestone",
+      "page": "https://unsplash.com/photos/d307ca884978"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1515694487378-a1a702d265b0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Caps and diplomas graduation",
+      "page": "https://unsplash.com/photos/a1a702d265b0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1513258617537-b02b6b7f643d?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Graduate celebrating success",
+      "page": "https://unsplash.com/photos/b02b6b7f643d"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1432821596592-e2c18853d3a7?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Education degree certificate",
+      "page": "https://unsplash.com/photos/e2c18853d3a7"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1549903072-5e5af6a25c14?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Academic achievement milestone",
+      "page": "https://unsplash.com/photos/5e5af6a25c14"
+    }
+  ],
+  "team": [
+    {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Professional team meeting together",
+      "page": "https://unsplash.com/photos/d307ca884978"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1552035325-4b2a2fc81a71?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Executive leadership group",
+      "page": "https://unsplash.com/photos/4b2a2fc81a71"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1517694712202-14dd9538615b?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Diverse professional team together",
+      "page": "https://unsplash.com/photos/14dd9538615b"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1523289333684-401d814987db?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Corporate team working",
+      "page": "https://unsplash.com/photos/401d814987db"
+    }
+  ],
+  "events": [
+    {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Tech networking event discussion",
+      "page": "https://unsplash.com/photos/d307ca884978"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Conference presentation speaking",
+      "page": "https://unsplash.com/photos/b8491531f063"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1542744173-8e7ebf1520a2?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Hands up at conference",
+      "page": "https://unsplash.com/photos/8e7ebf1520a2"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1540575467063-178cb50ee898?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Audience at tech summit",
+      "page": "https://unsplash.com/photos/178cb50ee898"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1507842591411-b4dc60461fb4?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Conference keynote speaking",
+      "page": "https://unsplash.com/photos/b4dc60461fb4"
+    }
+  ],
+  "abstract": [
+    {
+      "url": "https://images.unsplash.com/photo-1633098096956-afdc8bcc8552?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Digital technology pattern background",
+      "page": "https://unsplash.com/photos/afdc8bcc8552"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1561233835-f937539b95b9?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Abstract technology texture design",
+      "page": "https://unsplash.com/photos/f937539b95b9"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1667264501379-c1537934c7ab?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Modern digital design pattern",
+      "page": "https://unsplash.com/photos/c1537934c7ab"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Abstract code visualization display",
+      "page": "https://unsplash.com/photos/48416bd8575a"
+    }
+  ]
+}
